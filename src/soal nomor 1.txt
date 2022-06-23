@@ -1,0 +1,12 @@
+ langka-langkah untuk menemukan data dengan nama sigra yaitu :
+  1. Untuk mencari nilai atau data jika terdapat array maka bisa melakukan pencarian biner.
+  2. Mendefinisikan daftar nilai atau data untuk mencari data yang kitakiri inginkan yaitu SIGRA
+  3. Bandingkan angka atau data yang akan dicari dengan data tengah dan dicari yang lebih kecil dari data tengah atau
+  mencari dibagian kiri atau kanan
+  4. Pada pencarian data dimulai dengan pencarian data, dari tengah jika di tengah tidak ada maka dicari dikiri ataupun
+  di kanan sampai kiyta menemukan data yang kita cari.
+  5. Yang utama dalam pencarian data BST yaitu kita mencari ke subtree kiri karena di pohon pencarian biner semua data
+  di subtree kiri lebih kecil dan semua elemen di subtree kanan lebih besar dan langkah tersebut diulang-ulang sampai menemukan
+  SIGRA
+  Kemungkinan pada level 4 karena dapat terdapat pada urutan ke 4 , pada level 4 atau level lebih dari 4 data
+  SIGRA akan ditemukan

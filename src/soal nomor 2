@@ -1,0 +1,68 @@
+private int partition (int start, int end) {
+     int pivot = this.data[end];
+     int i = (start - 1);
+     for (int j = start; j <= end - 1; j++){
+     if (this.data[j]) < pivot) {
+     i++;
+     int t = this.data[i];
+     this.data[i] = this.data[j];
+     this.data[j] = t;
+     }
+   }
+   int t = this.data[i+1];
+   this.data[i+1] = this.data[end];
+   this.data[end] = t;
+   return (i + 1 );
+   }
+
+ perhitungan urutan pada p=5
+  P = 5
+  if (a [j] < 56) -> if(a[0] < 56)
+      i = i + 1 -> i =0 ;
+      int t = a[i] -> t = a[0];
+                       t = 2
+      a[i] = a[j] -> a [0] = a[j];
+                      a [0] = 2
+
+                      a= 2, 18, 1, 0, 56, 76, 98, 34, 12
+
+
+   J = 1
+   if (a [j] < 56) -> if(a[1] < 56)
+       i = i + 1 -> i =0 ;
+       int t = a[i] -> t = a[1];
+                        t = 18
+       a[i] = a[j] -> a [1] = a[j];
+                       a [1] = 18
+
+                       a= 2, 18, 1, 0, 56, 76, 98, 34, 12
+
+  J = 2
+  if (a [j] < 56) --> if(a[2] < 56)
+      i = i + 1 --> i = 0;
+      int t = a[i] -> t = a[2];
+                       t = 1
+      a[i] = a[j] -> a [2] = a[j];
+                      a [2] = 2
+
+                      a= 2, 18, 1, 0, 56, 76, 98, 34, 12
+
+   J = 3
+   if (a [j] < 56) --> if(a[3] < 56)
+       i = i + 1 --> i = 0;
+       int t = a[i] -> t = a[3];
+                        t = 0
+       a[i] = a[j] -> a [3] = a[j];
+                       a [3] = 0
+
+                       a= 2, 18, 1, 0, 56, 76, 98, 34, 12
+
+  J = 4
+   if (a [j] < 56) -> if(a[4] < 56)
+       i = i + 1 -> i = 0;
+       int t = a[i] --> t = a[4];
+                        t = 56
+       a[i] = a[j] -> a [4] = a[j];
+                       a [4] = 56
+
+                       a= 2, 18, 1, 0, 56, 76, 98, 34, 12
